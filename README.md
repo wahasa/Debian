@@ -11,14 +11,14 @@ Debian 11.3.0 (Bullseye)
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/install-debian11bul && chmod +x install-debian11bul && ./install-debian11bul
 ```
 
-Start Ubuntu
+Start Debian
 
 * Debian 11.3.0
 ```bash
 ./debian11bul
 ```
 
-Stop Ubuntu
+Stop Debian
 
 ```bash
 exit
