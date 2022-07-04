@@ -1,34 +1,21 @@
-
 ## Debian Termux Android
 ---------------
 ## Installation
 
 Copy and paste this command to Termux
 
-Ubuntu 22.10 (Kinetic)
-* Ubuntu Only
+Debian 11.3.0 (Bullseye)
+* Debian Only
 
 ```bash
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/install-ubuntu22kin && chmod +x install-ubuntu22kin && ./install-ubuntu22kin
-```
-
-Ubuntu 22.04 (Jammy Jellyfish)
-* Ubuntu Only
-
-```bash
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/install-ubuntu22jam && chmod +x install-ubuntu22jam && ./install-ubuntu22jam
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/install-debian11bul && chmod +x install-debian11bul && ./install-debian11bul
 ```
 
 Start Ubuntu
 
-* Ubuntu 22.10
+* Debian 11.3.0
 ```bash
-./ubuntu22kin
-```
-
-* Ubuntu 22.04
-```bash
-./ubuntu22jam
+./debian11bul
 ```
 
 Stop Ubuntu
