@@ -1,4 +1,4 @@
-## Debian Termux Android
+## Debian in Termux Android
 ---------------
 ## Installation
 
