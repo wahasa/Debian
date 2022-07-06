@@ -39,3 +39,35 @@ exit
 => Visit original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
 
 -----------
+
+## VNC Viewer
+
+* Start VNC Server
+
+on Debian, run this command to start :
+
+```
+vncserver
+```
+
+* Open Vnc Viewer
+
+Add (+) VNC Client to connect, fill with :
+
+Address
+> 127.0.0.1:5901
+
+Name
+> Debian 11
+
+To disconnect VNC Client, click (X) on the right.
+
+* Stop VNC Server
+
+on Debian, run this command to stop :
+
+```
+vncserver-stop
+```
+-------------
+
