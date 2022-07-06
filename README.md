@@ -1,11 +1,16 @@
 
 ## Debian on Termux Android
 
+---------
+Warning :
+
+Especially for Android 12 there are several bugs, and for more details, please read in Official [Termux](https://github.com/termux/termux-app).
+
+---------
 • Install Apps on Android
 - [x] [Termux](https://github.com/termux/termux-app/releases)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
----------------
 ## Installation
 
 Copy and paste this command to Termux :
@@ -42,6 +47,9 @@ exit
 ```
 
 => Visit original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
+
+-----------
+Visit problem bug in : [Issues](https://github.com/wahasa/Debian/issues/5)
 
 -----------
 
