@@ -3,7 +3,7 @@
 ---------------
 ## Installation
 
-Copy and paste this command to Termux
+Copy and paste this command to Termux :
 
 Debian 11.3.0 (Bullseye)
 * Install Debian
