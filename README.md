@@ -1,5 +1,5 @@
 
-## Debian in Termux Android
+## Debian on Termux Android
 ---------------
 ## Installation
 
@@ -36,6 +36,6 @@ Stop Debian
 exit
 ```
 
-=> Visit Original in [Andronix](https://github.com/AndronixApp/AndronixOrigin)
+=> Visit original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
 
 -----------
