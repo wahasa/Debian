@@ -1,5 +1,10 @@
 
 ## Debian on Termux Android
+
+• Install Apps on Android
+- [x] [Termux](https://github.com/termux/termux-app/releases)
+- [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
+
 ---------------
 ## Installation
 
