@@ -49,7 +49,7 @@ exit
 => Visit original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
 
 -----------
-Visit problem bug in : [Issues](https://github.com/wahasa/Debian/issues/5)
+Visit problem bug Debian in : [Issues](https://github.com/wahasa/Debian/issues/5)
 
 -----------
 
