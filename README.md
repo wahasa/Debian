@@ -1,4 +1,3 @@
-
 ## Debian on Termux Android
 
 ---------
@@ -15,7 +14,7 @@ Especially for Android 12 there are several bugs, and for more details, please r
 
 Copy and paste this command to Termux :
 
-Debian 11.3.0 (Bullseye)
+1. Debian 11.3.0 (Bullseye)
 * Install Debian
 
 ```
@@ -34,13 +33,13 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.3.0/install-debian-lxde && chmod +x install-debian-lxde && ./install-debian-lxde
 ```
 
-Start Debian
+2. Start Debian
 
 ```
 ./debian
 ```
 
-Stop Debian
+3. Stop Debian
 
 ```
 exit
@@ -82,5 +81,5 @@ on Debian, run this command to stop :
 ```
 vncserver-stop
 ```
--------------
 
+-------------
