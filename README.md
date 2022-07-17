@@ -14,23 +14,23 @@ Especially for Android 12 there are several bugs, and for more details, please r
 
 Copy and paste this command to Termux :
 
-1. Debian 11.3.0 (Bullseye)
+1. Debian 11.4.0 (Bullseye)
 * Install Debian
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.3.0/install-debian && chmod +x install-debian && ./install-debian
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian && chmod +x install-debian && ./install-debian
 ```
 
 * Install Debian-xfce
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.3.0/install-debian-xfce && chmod +x install-debian-xfce && ./install-debian-xfce
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian-xfce && chmod +x install-debian-xfce && ./install-debian-xfce
 ```
 
 * Install Debian-lxde
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.3.0/install-debian-lxde && chmod +x install-debian-lxde && ./install-debian-lxde
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian-lxde && chmod +x install-debian-lxde && ./install-debian-lxde
 ```
 
 2. Start Debian
