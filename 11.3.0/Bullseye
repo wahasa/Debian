@@ -1,9 +1,9 @@
-PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+PRETTY_NAME="Debian GNU/Linux 11 (Bullseye)"
 NAME="Debian GNU/Linux"
 VERSION_ID="11"
-VERSI="11 (mata sasaran)"
-VERSION_CODENAME=mata sasaran
-ID=debian
+VERSI="11.4.0 (Bullseye)"
+VERSION_CODENAME="Bullseye"
+ID="Debian"
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
