@@ -24,13 +24,13 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 * Install Debian-xfce
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian-xfce && chmod +x install-debian-xfce && ./install-debian-xfce
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/de-ubuntu-xfce.sh && chmod +x de-ubuntu-xfce.sh && ./de-ubuntu-xfce.sh
 ```
 
 * Install Debian-lxde
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian-lxde && chmod +x install-debian-lxde && ./install-debian-lxde
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/de-ubuntu-lxde.sh && chmod +x de-ubuntu-lxde.sh && ./de-ubuntu-lxde.sh
 ```
 
 2. Start Debian
