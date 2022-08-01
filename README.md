@@ -45,10 +45,16 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 exit
 ```
 
-=> Visit original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
+---------
 
------------
-Visit problem bug Debian in : [Issues](https://github.com/wahasa/Debian/issues/5)
+> Original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
+
+---------
+
+- [x] Sound bug fix
+- [x] Browser bug fix
+
+Visit problem Debian in : [Issues](https://github.com/wahasa/Debian/issues/5)
 
 -----------
 
@@ -61,6 +67,11 @@ on Debian, run this command to start :
 ```
 vncserver
 ```
+Or
+
+```
+vncserver localhost:1
+```
 
 * Open Vnc Viewer
 
@@ -68,6 +79,9 @@ Add (+) VNC Client to connect, fill with :
 
 Address
 > 127.0.0.1:5901
+
+Or
+> localhost:1
 
 Name
 > Debian 11
