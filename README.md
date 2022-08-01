@@ -18,7 +18,7 @@ Copy and paste this command to Termux :
 * Install Debian
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/11.4.0/install-debian && chmod +x install-debian && ./install-debian
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/install-debian.sh && chmod +x install-debian.sh && ./install-debian.sh
 ```
 
 * Install Debian-xfce
