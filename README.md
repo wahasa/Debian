@@ -14,6 +14,10 @@ Especially for Android 12 there are several bugs, and for more details, please r
 
 Copy and paste this command to Termux :
 
+```
+pkg update && pkg upgrade
+```
+
 1. Debian 11.4.0 (Bullseye)
 * Install Debian
 
