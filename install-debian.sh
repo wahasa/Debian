@@ -4,6 +4,8 @@ pkg install proot -y
 
 termux-setup-storage
 
+wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/audiofix.sh && chmod +x audiofix.sh && ./audiofix.sh
+
 folder=debian-fs
 if [ -d "$folder" ]; then
 	first=1
@@ -33,34 +35,37 @@ if [ "$first" != 1 ];then
 	echo "Decompressing Rootfs, please be patient."
 	proot --link2symlink tar -xf ${cur}/${tarball}||:
 	cd "$cur"
-echo "localhost" > ~/"$folder"/etc/hostname
-echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
-echo "nameserver 8.8.8.8" > ~/"$folder"/etc/resolv.conf
-echo "nameserver 8.8.4.4" >> ~/"$folder"/etc/resolv.conf
-fi
-mkdir -p debian-binds
-bin=debian
+   fi
+   echo "localhost" > ~/"$folder"/etc/hostname
+   echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
+   echo "nameserver 8.8.8.8" > ~/"$folder"/etc/resolv.conf
+mkdir -p $folder/binds
+bin=.debian
+linux=debian
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
+pulseaudio -k >> /dev/null 2>&1
+pulseaudio --start >> /dev/null 2>&1
 cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
 command="proot"
+command+=" --kill-on-exit"
 command+=" --link2symlink"
 command+=" -0"
 command+=" -r $folder"
-if [ -n "\$(ls -A debian-binds)" ]; then
-    for f in debian-binds/* ;do
+if [ -n "\$(ls -A $folder/binds)" ]; then
+    for f in $folder/binds/* ;do
       . \$f
     done
 fi
 command+=" -b /dev"
 command+=" -b /proc"
-command+=" -b debian-fs/root:/dev/shm"
+command+=" -b $folder/root:/dev/shm"
 ## uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
-## uncomment the following line to mount /sdcard directly to / 
+## uncomment the following line to mount /sdcard directly to /
 #command+=" -b /sdcard"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
@@ -77,13 +82,34 @@ else
 fi
 EOM
 
-echo "fixing shebang of $bin"
-termux-fix-shebang $bin
-echo "making $bin executable"
-chmod +x $bin
-echo "removing image for some space"
-rm $tarball
-echo "You can now launch Debian with the ./${bin} script next time"
+   echo "Fixing shebang of $linux"
+   termux-fix-shebang $bin
+   echo "Making $linux executable"
+   chmod +x $bin
+   echo "bash $bin" > $PREFIX/bin/$linux
+   chmod +x $PREFIX/bin/$linux
+   echo "Removing image for some space"
+   rm $tarball
+clear
+printf "##################################################\n"
+printf "##                                              ##\n"
+printf "##   8888,  8888  8888,   8     8     88,   8   ##\n"
+printf "##   8   8  8     8   8   8    8 8    8 8   8   ##\n"
+printf "##   8   8  8888  8888    8   ,888,   8  88 8   ##\n"
+printf "##   8   8  8     8   8   8   8   8   8   8 8   ##\n"
+printf "##   8888'  8888  8888'   8  8     8  8   '88   ##\n"
+printf "##                                              ##\n"
+printf "##################################################\n"
+echo " "
+echo "Updating Debian,.."
+echo " "
+echo "#!/bin/bash
+apt update && apt upgrade -y
+clear
+echo " "
+echo "You can now start Debian with 'debian' script next time"
+echo " "
+rm -rf ~/.bash_profile" > $folder/root/.bash_profile
 bash $bin
-
-rm install-debian.sh
+   rm install-debian.sh
+   rm audiofix.sh
