@@ -105,6 +105,7 @@ echo "Updating Debian,.."
 echo " "
 echo "#!/bin/bash
 apt update && apt upgrade -y
+apt install apt-utils dialog -y
 clear
 echo " "
 echo "You can now start Debian with 'debian' script next time"
