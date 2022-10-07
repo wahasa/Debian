@@ -33,7 +33,7 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 2. Start Debian
 
 ```
-./debian
+debian
 ```
 
 3. Stop Debian
