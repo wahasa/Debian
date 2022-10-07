@@ -1,3 +1,8 @@
+
+<p align="center">My Channel</br><b>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
+
+---
 ## Debian on Termux Android
 
 ---------
@@ -18,23 +23,11 @@ Copy and paste this command to Termux :
 pkg update && pkg upgrade
 ```
 
-1. Debian 11.4.0 (Bullseye)
+1. Debian 11.5.0 (Bullseye)
 * Install Debian
 
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/install-debian.sh && chmod +x install-debian.sh && ./install-debian.sh
-```
-
-* Install Debian-xfce
-
-```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/de-ubuntu-xfce.sh && chmod +x de-ubuntu-xfce.sh && ./de-ubuntu-xfce.sh
-```
-
-* Install Debian-lxde
-
-```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/de-ubuntu-lxde.sh && chmod +x de-ubuntu-lxde.sh && ./de-ubuntu-lxde.sh
 ```
 
 2. Start Debian
@@ -47,57 +40,11 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 
 ```
 exit
-```
-
----------
-
-> Original site on [Andronix](https://github.com/AndronixApp/AndronixOrigin)
-
----------
-
-- [x] Sound bug fix
-- [x] Browser bug fix
-
-Visit problem Debian in : [Issues](https://github.com/wahasa/Debian/issues/5)
-
------------
-
-## VNC Viewer
-
-* Start VNC Server
-
-on Debian, run this command to start :
 
 ```
-vncserver
-```
-Or
+</br>
 
-```
-vncserver localhost:1
-```
+---
+<p align="center">Good Luck</p>
 
-* Open Vnc Viewer
-
-Add (+) VNC Client to connect, fill with :
-
-Address
-> 127.0.0.1:5901
-
-Or
-> localhost:1
-
-Name
-> Debian 11
-
-To disconnect VNC Client, click (X) on the right.
-
-* Stop VNC Server
-
-on Debian, run this command to stop :
-
-```
-vncserver-stop
-```
-
--------------
+---
