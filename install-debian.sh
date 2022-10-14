@@ -114,4 +114,4 @@ rm -rf ~/.bash_profile" > $folder/root/.bash_profile
 
    rm install-debian.sh
    rm audiofix.sh
-   bash $bin
+bash $bin
