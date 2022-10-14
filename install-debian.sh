@@ -111,6 +111,7 @@ echo " "
 echo "You can now start Debian with 'debian' script next time"
 echo " "
 rm -rf ~/.bash_profile" > $folder/root/.bash_profile
-bash $bin
+
    rm install-debian.sh
    rm audiofix.sh
+   bash $bin
