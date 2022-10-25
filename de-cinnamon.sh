@@ -50,5 +50,3 @@ echo "Exit  Vnc, run ctrl+c"
 echo " "
 
 rm de-cinnamon.sh
-
-vnc-start
