@@ -50,5 +50,3 @@ echo "Exit  Vnc, run ctrl+c"
 echo " "
 
 rm de-ukui.sh
-
-vnc-start
