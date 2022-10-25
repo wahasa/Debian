@@ -61,5 +61,3 @@ echo "Exit  Vnc, run ctrl+c"
 echo " "
 
 rm de-gnome.sh
-
-vnc-start
