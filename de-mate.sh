@@ -53,5 +53,3 @@ echo "Exit  Vnc, run ctrl+c"
 echo " "
 
 rm de-mate.sh
-
-vnc-start
