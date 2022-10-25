@@ -40,9 +40,13 @@ clear
 echo " "
 echo "Vnc Server address will run at 127.0.0.1:5901"
 echo " "
-echo "Start Vnc Server, run vnc-start"
+echo "In Termux"
+echo "Start Vnc Server, run vncstart"
+echo "Stop  Vnc Server, run vncstop"
 echo " "
-echo "Stop Vnc Server, run vnc-stop"
+echo "In Linux"
+echo "Start Vnc, run vncstart"
+echo "Exit  Vnc, run ctrl+c"
 echo " "
 
 rm de-ukui.sh
