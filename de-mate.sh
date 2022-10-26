@@ -16,9 +16,8 @@ mkdir -p ~/.vnc
 echo "#!/bin/bash
 export PULSE_SERVER=127.0.0.1
 xrdb $HOME/.Xresources
-xsetroot -solid grey
 x-window-manager &
-export XKL_XMODMAP_DISABLE=1
+mate-panel &
 mate-session &" > ~/.vnc/xstartup
 
 echo "#!/bin/sh
