@@ -39,7 +39,10 @@ echo " "
 echo "Installing browser,.."
 echo " "
 sudo apt install firefox-esr -y
-wget https://raw.githubusercontent.com/wahasa/Debian/main/libreofficefix.sh && chmod +x libreofficefix.sh && ./libreofficefix.sh
+rm -rf /usr/lib/libreoffice/program/oosplash
+wget -q https://github.com/wahasa/Ubuntu/blob/main/Patch/oosplash?raw=true -O /usr/lib/libreoffice/program/oosplash
+chmod +x /usr/lib/libreoffice/program/oosplash
+mkdir /prod && mkdir /prod/version
 clear
 echo " "
 echo "Vnc Server address will run at 127.0.0.1:5901"
