@@ -39,6 +39,7 @@ echo " "
 echo "Installing browser,.."
 echo " "
 sudo apt install firefox-esr -y
+wget https://raw.githubusercontent.com/wahasa/Debian/main/libreofficefix.sh && chmod +x libreofficefix.sh && ./libreofficefix.sh
 clear
 echo " "
 echo "Vnc Server address will run at 127.0.0.1:5901"
