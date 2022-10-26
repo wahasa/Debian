@@ -16,18 +16,10 @@ mkdir -p ~/.vnc
 echo "#!/bin/bash
 export PULSE_SERVER=127.0.0.1
 xrdb $HOME/.Xresources
-xsetroot -solid grey
-x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
-x-window-manager &
-export XKL_XMODMAP_DISABLE=1
-export XDG_CURRENT_DESKTOP="GNOME-Flashback:GNOME"
-export XDG_MENU_PREFIX="gnome-flashback"
-gnome-session --session=gnome-flashback-metacity --disable-acceleration-check --debug &
 metacity &
-gnome-panel &
 #budgie-panel &
-gnome-flashback &
-gnome-settings-daemon &" > ~/.vnc/xstartup
+gnome-panel &
+gnome-flashback &" > ~/.vnc/xstartup
 
 echo "#!/bin/sh
 rm -rf /run/dbus/pid
