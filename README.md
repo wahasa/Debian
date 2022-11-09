@@ -45,7 +45,7 @@ exit
 
 ---
 
-4. [Desktop Environment](https://github.com/wahasa/Ubuntu/issues/7)
+4. [Desktop Environment](https://github.com/wahasa/Debian/issues/8)
 
 on Ubuntu, run this command :
 
