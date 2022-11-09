@@ -64,6 +64,40 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 * Install Desktop-kde
 > In the process,.
 
+---
+## VNC Viewer
+
+1. Start VNC Server
+
+on Debian, run this command to start :
+
+```
+vnc-start
+```
+
+2. Open Vnc Viewer
+
+Add (+) VNC Client to connect, fill with :
+
+Address
+```
+localhost:1
+```
+
+Name
+```
+Debian 11
+```
+
+To disconnect VNC Client, click (X) on the right.
+
+3. Stop VNC Server
+
+on Debian, run this command to stop :
+
+```
+vnc-stop
+```
 </br>
 
 ---
