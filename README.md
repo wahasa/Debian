@@ -58,11 +58,11 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 ```
 
 * Install Desktop-lxde
-
+> In the process,..
 * Install Desktop-lxqt
-
+> In the process,.
 * Install Desktop-kde
-
+> In the process,.
 
 </br>
 
