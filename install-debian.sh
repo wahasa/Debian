@@ -1,7 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
 pkg install proot -y
-
 termux-setup-storage
 
 wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Patch/audiofix.sh && chmod +x audiofix.sh && ./audiofix.sh
@@ -39,6 +38,7 @@ if [ "$first" != 1 ];then
    echo "localhost" > ~/"$folder"/etc/hostname
    echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
    echo "nameserver 8.8.8.8" > ~/"$folder"/etc/resolv.conf
+
 mkdir -p $folder/binds
 bin=.debian
 linux=debian
@@ -90,19 +90,10 @@ EOM
    chmod +x $PREFIX/bin/$linux
    echo "Removing image for some space"
    #rm $tarball
-clear
-printf "##################################################\n"
-printf "##                                              ##\n"
-printf "##    8888,  8888  8888,  8     8     88,  8    ##\n"
-printf "##    8   8  8     8   8  8    8 8    8 8  8    ##\n"
-printf "##    8   8  8888  8888   8   ,888,   8 88 8    ##\n"
-printf "##    8   8  8     8   8  8   8   8   8  8 8    ##\n"
-printf "##    8888'  8888  8888'  8  8     8  8  '88    ##\n"
-printf "##                                              ##\n"
-printf "##################################################\n"
-echo " "
-echo "Updating Debian,.."
-echo " "
+   clear
+   echo " "
+   echo "Updating Debian,.."
+   echo " "
 echo "#!/bin/bash
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
