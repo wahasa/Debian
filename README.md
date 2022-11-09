@@ -54,7 +54,7 @@ on Ubuntu, run this command :
 * Install Desktop-xfce
 
 ```
-apt install wget -y && wget  && chmod +x de-xfce.sh && ./de-xfce.sh
+apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
 * Install Desktop-lxde
