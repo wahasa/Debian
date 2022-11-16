@@ -57,7 +57,10 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 ```
 
 * Install Desktop-lxde
-> In the process,..
+```
+apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
+```
+
 * Install Desktop-lxqt
 > In the process,.
 * Install Desktop-kde
