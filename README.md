@@ -67,7 +67,9 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 ```
 
 * Install Desktop-kde
-> In the process,.
+```
+apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
+```
 
 ---
 ## VNC Viewer
