@@ -23,7 +23,7 @@ Copy and paste this command to Termux :
 pkg update && pkg upgrade
 ```
 
-1. Debian 11.5.0 (Bullseye)
+1. [Debian 11.5.0 (Bullseye)](https://youtu.be/OuglfkuLD4A)
 * Install Debian
 
 ```
@@ -50,23 +50,23 @@ on Ubuntu, run this command :
 
 > apt update && apt upgrade
 
-* Install Desktop-xfce
+* [Install Desktop-xfce](https://youtu.be/Es9ncg6vBSk)
 
 ```
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
-* Install Desktop-lxde
+* [Install Desktop-lxde](https://youtu.be/_Q0FZd6ZUyo)
 ```
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
 ```
 
-* Install Desktop-lxqt
+* [Install Desktop-lxqt](https://youtu.be/qywRCj1cOKw)
 ```
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
 ```
 
-* Install Desktop-kde
+* [Install Desktop-kde](https://youtu.be/XFO2GIPvmiY)
 ```
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
 ```
