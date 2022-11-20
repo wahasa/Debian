@@ -72,6 +72,13 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 ```
 
 ---
+Note :
+- [x] Soundfix
+- [x] Browserfix [Click here](https://github.com/wahasa/Debian/issues/5#issuecomment-1175778341)
+
+Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
+
+---
 ## VNC Viewer
 
 1. Start VNC Server
