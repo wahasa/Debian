@@ -46,7 +46,7 @@ exit
 
 4. [Desktop Environment](https://github.com/wahasa/Debian/issues/8)
 
-on Ubuntu, run this command :
+on Debian, run this command :
 
 > apt update && apt upgrade
 
