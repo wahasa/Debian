@@ -8,7 +8,7 @@
 ---
 Announcement :
 
-for android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fixed.
+For android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fixed.
 
 ---
 • Install Apps on Android
@@ -76,7 +76,7 @@ Note :
 - [x] Soundfix
 - [x] Browserfix [Click here](https://github.com/wahasa/Debian/issues/5#issuecomment-1175778341)
 - [x] Install Chromium [Click here](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005359)
-- [x] Install Libre Office [Click here](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
+- [x] Install LibreOffice [Click here](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
 
 Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
 
