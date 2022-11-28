@@ -74,9 +74,9 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 ---
 Note :
 - [x] Soundfix
-- [x] Browserfix [Click here](https://github.com/wahasa/Debian/issues/5#issuecomment-1175778341)
-- [x] Install Chromium [Click here](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005359)
-- [x] Install LibreOffice [Click here](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
+- [x] Browserfix [Click here,.](https://github.com/wahasa/Debian/issues/5#issuecomment-1175778341)
+- [x] Install Chromium [Click here,.](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005359)
+- [x] Install LibreOffice [Click here,.](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
 
 Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
 
@@ -102,7 +102,7 @@ localhost:1
 
 Name
 ```
-Debian 11
+Debian Desktop
 ```
 
 To disconnect VNC Client, click (X) on the right.
