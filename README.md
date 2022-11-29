@@ -23,11 +23,17 @@ Copy and paste this command to Termux :
 pkg update && pkg upgrade
 ```
 
-1. [Debian 11.5.0 (Bullseye)](https://youtu.be/OuglfkuLD4A)
-* Install Debian
+1. Install Debian
+
+* [Debian 11.05 (Bullseye)](https://youtu.be/OuglfkuLD4A)
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/install-debian.sh && chmod +x install-debian.sh && ./install-debian.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Debian/debian11.05.sh && chmod +x debian11.05.sh && ./debian11.05.sh
+```
+
+* Debian 10.13 (Buster)
+```
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Debian/debian10.13.sh && chmod +x debian10.13.sh && ./debian10.13.sh
 ```
 
 2. Start Debian
