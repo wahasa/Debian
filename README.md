@@ -71,6 +71,10 @@ apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
 ```
 
+* Install Desktop-gnome
+> [Click here,.](https://github.com/wahasa/Debian/issues/7)
+* Install Desktop-gnome
+> [Click here,.](https://github.com/wahasa/Debian/issues/7)
 * Install Desktop-mate
 > [No Recommended,.](https://github.com/wahasa/Debian/issues/8#issuecomment-1329871851)
 * Install Desktop-cinnamon
