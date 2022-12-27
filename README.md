@@ -25,7 +25,7 @@ pkg update && pkg upgrade
 
 1. Install Debian
 
-* [Debian 11.05 (Bullseye)](https://youtu.be/OuglfkuLD4A)
+* [Debian 11.06 (Bullseye)](https://youtu.be/OuglfkuLD4A)
 
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Debian/debian11.05.sh && chmod +x debian11.05.sh && ./debian11.05.sh
