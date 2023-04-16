@@ -1,3 +1,7 @@
-Rootfs
-* https://docker.debian.net/
-* https://hub.docker.com/_/debian
+Debian Releases
+>debian.org
+- https://www.debian.org/releases
+
+Source Rootfs
+- https://docker.debian.net/
+- https://hub.docker.com/_/debian
