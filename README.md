@@ -50,29 +50,44 @@ Basic commands Ubuntu
 > apt -h : Help all commands
 
 ---
-## [Desktop Environment](https://github.com/wahasa/Debian/issues/8)
+## Desktop Environment
 
 on Debian, run this command :
 
 > apt update && apt upgrade
 
-* [Install Desktop-xfce](https://youtu.be/Es9ncg6vBSk)
+<details></br>
+<summary><b><code>Install Desktop Xfce</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/xfce.jpg"</p>
+</details>
 
 ```
-apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
 
-* [Install Desktop-lxde](https://youtu.be/_Q0FZd6ZUyo)
+<details></br>
+<summary><b><code>Install Desktop Lxde</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/lxde.jpg"</p>
+</details>
+
 ```
-apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
 
-* [Install Desktop-lxqt](https://youtu.be/qywRCj1cOKw)
+<details></br>
+<summary><b><code>Install Desktop Lxqt</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/lxqt.jpg"</p>
+</details>
+
 ```
-apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
 
-* [Install Desktop-kde](https://youtu.be/XFO2GIPvmiY)
+<details></br>
+<summary><b><code>Install Desktop Kde</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/kde.jpg"</p>
+</details>
+
 ```
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
 ```
