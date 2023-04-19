@@ -31,6 +31,7 @@ dbus-launch startplasma-x11" > /usr/local/bin/vncstart
    echo "Installing Browser,.."
    echo ""
 #Browser Fix
+wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Patch/passwd -P .vnc/
 apt install firefox-esr -y
 vnc-start
 sleep 5
@@ -42,6 +43,7 @@ sleep 2
 
 wget -O $(find ~/.mozilla/firefox -name *.default-esr)/user.js https://raw.githubusercontent.com/wahasa/Ubuntu/main/Patch/user.js
 
+rm .vnc/passwd
    clear
    echo ""
    echo "Vnc Server address will run at 127.0.0.1:5901"
