@@ -4,7 +4,7 @@ apt-get update
 apt-get install udisks2 -y
 echo " " > /var/lib/dpkg/info/udisks2.postinst
 apt-mark hold udisks2
-apt-get install sudo tzdata -y
+apt-get install sudo -y ; dpkg-reconfigure tzdata
 apt-get install lxde lxterminal -y
 apt-get install tigervnc-standalone-server dbus-x11 -y
 mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
