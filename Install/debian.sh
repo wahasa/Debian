@@ -100,7 +100,7 @@ deb http://deb.debian.org/debian testing-backports main contrib non-free non-fre
    echo "Updating Debian,.."
    echo " "
 echo "#!/bin/bash
-touch ~/.hushlogin
+rm /etc/apt/sources.list.d/debian.sources
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
 rm -rf ~/.bash_profile
