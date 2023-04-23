@@ -100,7 +100,7 @@ deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-fr
    echo "Updating Debian,.."
    echo " "
 echo "#!/bin/bash
-touch ~/.hushlogin
+rm /etc/apt/sources.list.d/debian.sources
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
 rm -rf ~/.bash_profile
@@ -110,4 +110,4 @@ bash $linux
    echo ""
    echo "You can now start Debian with 'debian' script next time"
    echo ""
-rm debian.sh
+rm debian12.sh
