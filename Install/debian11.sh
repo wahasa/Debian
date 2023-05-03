@@ -2,6 +2,7 @@
 pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
+debian=bullseye
 folder=debian-fs
 if [ -d "$folder" ]; then
         first=1
@@ -23,7 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/bullseye/rootfs.tar.xz?raw=true" -O $tarball
+                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/rootfs.tar.xz?raw=true" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -88,19 +89,11 @@ pulseaudio --start \
     --exit-idle-time=-1
 bash .debian' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
-#Repositories
-echo "#Debian Development
-deb http://deb.debian.org/debian bullseye main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian bullseye-updates main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian-security bullseye-security main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian bullseye-proposed-updates main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian bullseye-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
    clear
-   echo " "
+   echo ""
    echo "Updating Debian,.."
-   echo " "
+   echo ""
 echo "#!/bin/bash
-rm /etc/apt/sources.list.d/debian.sources
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
 rm -rf ~/.bash_profile
@@ -111,3 +104,4 @@ bash $linux
    echo "You can now start Debian with 'debian' script next time"
    echo ""
 rm debian11.sh
+#
