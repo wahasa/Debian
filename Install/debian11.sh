@@ -104,4 +104,3 @@ bash $linux
    echo "You can now start Debian with 'debian' script next time"
    echo ""
 rm debian11.sh
-#
