@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
+debian=testing
 termux-setup-storage
 folder=debian-fs
 if [ -d "$folder" ]; then
@@ -23,7 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/testing/rootfs.tar.xz?raw=true" -O $tarball
+                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/rootfs.tar.xz?raw=true" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -96,11 +97,11 @@ deb http://deb.debian.org/debian-security testing-security main contrib non-free
 deb http://deb.debian.org/debian testing-proposed-updates main contrib non-free non-free-firmware
 deb http://deb.debian.org/debian testing-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
    clear
-   echo " "
+   echo ""
    echo "Updating Debian,.."
-   echo " "
+   echo ""
 echo "#!/bin/bash
-rm /etc/apt/sources.list.d/debian.sources
+#rm /etc/apt/sources.list.d/debian.sources
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
 rm -rf ~/.bash_profile
@@ -111,3 +112,4 @@ bash $linux
    echo "You can now start Debian with 'debian' script next time"
    echo ""
 rm debian.sh
+#
