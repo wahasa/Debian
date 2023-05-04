@@ -53,7 +53,7 @@ on Debian, run this command :
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Debian/main/Images/xfce.jpg"</p>
+<p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/xfce.jpg"</p>
 </details>
 
 ```
@@ -62,7 +62,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/
 
 <details></br>
 <summary><b><code>Install Desktop Lxde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Debian/main/Images/lxde.jpg"</p>
+<p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/lxde.jpg"</p>
 </details>
 
 ```
@@ -71,7 +71,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/
 
 <details></br>
 <summary><b><code>Install Desktop Lxqt</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Debian/main/Images/lxqt.jpg"</p>
+<p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/lxqt.jpg"</p>
 </details>
 
 ```
@@ -80,7 +80,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/
 
 <details></br>
 <summary><b><code>Install Desktop Kde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Debian/main/Images/kde.jpg"</p>
+<p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/kde.jpg"</p>
 </details>
 
 ```
