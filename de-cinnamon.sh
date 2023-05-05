@@ -39,4 +39,3 @@ dbus-launch cinnamon-session" > /usr/local/bin/vncstart
    echo "Stop Vnc Server, run vnc-stop"
    echo ""
 rm de-cinnamon.sh
-#
