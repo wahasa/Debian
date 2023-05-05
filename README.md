@@ -87,13 +87,21 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/
 apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
 ```
 
+<details></br>
+<summary><b><code>More List Desktop</code></b></summary>
+Warning :</br>
+It is not recommended to install because there are some problems.
+</details>
+
+[Click here,.](https://github.com/wahasa/Ubuntu/issues/10)
+
 ---
 Note :
 - [x] Soundfix
 - [x] Browserfix
 - [x] Install LibreOffice [Click here,.](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
 
-Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
+Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues/7)
 
 ---
 ## VNC Viewer
