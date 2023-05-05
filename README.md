@@ -84,7 +84,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/
 </details>
 
 ```
-apt install wget -y && wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
 
 <details></br>
