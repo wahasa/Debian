@@ -48,4 +48,3 @@ wget https://raw.githubusercontent.com/wahasa/Debian/main/libreofficefix.sh ; ch
    echo "Exit  Vnc, run ctrl+c"
    echo ""
 rm de-budgie.sh
-#
