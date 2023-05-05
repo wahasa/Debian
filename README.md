@@ -93,7 +93,7 @@ Warning :</br>
 It is not recommended to install because there are some problems.
 </details>
 
-[Click here,.](https://github.com/wahasa/Ubuntu/issues/10)
+[Click here,.](https://github.com/wahasa/Debian/issues/7)
 
 ---
 Note :
@@ -101,7 +101,7 @@ Note :
 - [x] Browserfix
 - [x] Install LibreOffice [Click here,.](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
 
-Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues/7)
+Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
 
 ---
 ## VNC Viewer
