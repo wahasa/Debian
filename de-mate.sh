@@ -39,4 +39,3 @@ dbus-launch mate-session" > /usr/local/bin/vncstart
    echo "Stop Vnc Server, run vnc-stop"
    echo ""
 rm de-mate.sh
-#
