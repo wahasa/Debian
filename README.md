@@ -96,10 +96,10 @@ It is not recommended to install because there are some problems.
 [Click here,.](https://github.com/wahasa/Debian/issues/7)
 
 ---
-Note :
-- [x] Soundfix
-- [x] Browserfix
-- [x] Install LibreOffice [Click here,.](https://github.com/wahasa/Debian/issues/9#issuecomment-1321005437)
+Feature
+- [x] Fixed Sound
+- [x] Fixed Browser Crash
+- [x] Access to Sdcard
 
 Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
 
