@@ -8,11 +8,18 @@ clear
 printf "${blu}Welcome To Debian Termux For Android\n"
 printf "${red}> ${wht}https://github.com/wahasa/Debian"
 printf "\n\n"
-printf "${ylw}• Debian 12 (Bookworm)"
+printf "${ylw}• Debian 13 (Trixie)"
 printf "\n\n"
 printf "${blu}Name    ${red}: ${grn}Debian12\n"
-printf "${blu}Version ${red}: ${grn}12.0\n"
+printf "${blu}Version ${red}: ${grn}13.0\n"
 printf "${blu}Status  ${red}: ${grn}Pre-release\n"
+printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
+printf "\n\n"
+printf "${ylw}• Debian 12 (Bookworm)"
+printf "\n\n"
+printf "${blu}Name    ${red}: ${grn}Debian11\n"
+printf "${blu}Version ${red}: ${grn}12.0\n"
+printf "${blu}Status  ${red}: ${grn}Latest\n"
 printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
 printf "\n\n"
 printf "${ylw}• Debian 11 (Bullseye)"
@@ -32,8 +39,8 @@ printf "\n\n"
 printf "${ylw}• Debian (Development)"
 printf "\n\n"
 printf "${blu}Name    ${red}: ${grn}DebianDev\n"
-printf "${blu}Version ${red}: ${grn}Beta 12.0\n"
-printf "${blu}Code    ${red}: ${grn}Bookworm\n"
+printf "${blu}Version ${red}: ${grn}Beta 13.0\n"
+printf "${blu}Code    ${red}: ${grn}Trixie\n"
 printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
 printf "\n\n"
 printf "${grn}To install run with : Install <${blu}Name${grn}>"
@@ -41,6 +48,9 @@ printf "\n\n"
 	;;
         "DebianDev")
 wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian.sh ; chmod +x debian.sh ; bash debian.sh
+        ;;
+        "Debian13")
+wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian13.sh ; chmod +x debian13.sh ; bash debian13.sh
         ;;
         "Debian12")
 wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian12.sh ; chmod +x debian12.sh ; bash debian12.sh
