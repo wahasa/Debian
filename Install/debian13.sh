@@ -103,4 +103,4 @@ bash $linux
    echo ""
    echo "You can now start Debian with 'debian' script next time"
    echo ""
-rm debian12.sh
+rm debian13.sh
