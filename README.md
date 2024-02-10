@@ -54,46 +54,39 @@ on Debian, run this command :
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
 <p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/xfce.jpg"</p>
-</details>
+
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxde</code></b></summary>
 <p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/lxde.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxqt</code></b></summary>
 <p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/lxqt.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Kde</code></b></summary>
 <p align="center"><img src="https://github.com/wahasa/Debian/raw/main/Image/kde.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
-
-<details></br>
-<summary><b><code>More List Desktop</code></b></summary>
-Warning :</br>
-It is not recommended to install because there are some problems.
 </details>
-
-[Click here,.](https://github.com/wahasa/Debian/issues/7)
 
 ---
 Feature
