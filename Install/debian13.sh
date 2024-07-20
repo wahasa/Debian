@@ -88,7 +88,12 @@ EOM
    #Removing image for some space"
    #rm $tarball
 #Repositories
-#
+#echo "#Debian Repositories
+#deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian trixie-proposed-updates main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .debian' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -97,6 +102,7 @@ chmod +x $PREFIX/bin/$linux
    echo "Updating Debian,.."
    echo ""
 echo "#!/bin/bash
+touch ~/.hushlogin
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
 cp /etc/skel/.bashrc .
