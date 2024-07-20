@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
-pkg install proot pulseaudio -y
+pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
 debian=bullseye
 folder=debian-fs
 if [ -d "$folder" ]; then
         first=1
-        echo "skipping downloading"
+        echo "Skipping Downloading"
 fi
 tarball="debian-rootfs.tar.xz"
 if [ "$first" != 1 ];then
@@ -22,7 +22,7 @@ if [ "$first" != 1 ];then
                 x86_64)
                         archurl="amd64" ;;
                 *)
-                        echo "unknown architecture"; exit 1 ;;
+                        echo "Unknown Architecture"; exit 1 ;;
                 esac
                 wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/rootfs.tar.xz?raw=true" -O $tarball
         fi
@@ -42,8 +42,11 @@ linux=debian
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
+pulseaudio --start \
+    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
+    --exit-idle-time=-1
 cd \$(dirname \$0)
-## unset LD_PRELOAD in case termux-exec is installed
+## Unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
 command="proot"
 command+=" --kill-on-exit"
@@ -56,11 +59,13 @@ if [ -n "\$(ls -A $folder/binds)" ]; then
     done
 fi
 command+=" -b /dev"
+command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
 command+=" -b /proc"
+command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
-## uncomment the following line to have access to the home directory of termux
+## Uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
-## uncomment the following line to mount /sdcard directly to /
+## Uncomment the following line to mount /sdcard directly to /
 command+=" -b /sdcard"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
@@ -81,26 +86,35 @@ EOM
    #Making $linux executable"
    chmod +x $bin
    #Removing image for some space"
-   rm $tarball
-#Sound Fix
-echo '#!/bin/bash
-pulseaudio --start \
-    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
-    --exit-idle-time=-1
-bash .debian' > $PREFIX/bin/$linux
+   #rm $tarball
+#Repositories
+#echo "#Debian Repositories
+#deb http://deb.debian.org/debian bullseye main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian bullseye-updates main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian-security bullseye-security main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian bullseye-proposed-updates main contrib non-free non-free-firmware
+#deb http://deb.debian.org/debian bullseye-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
+echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
+echo 'bash .debian' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
    echo "Updating Debian,.."
    echo ""
 echo "#!/bin/bash
+touch ~/.hushlogin
 apt update && apt upgrade -y
 apt install apt-utils dialog nano -y
+cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can now start Debian with 'debian' script next time"
+   echo "You can login to Debian with 'debian' script next time"
    echo ""
-rm debian11.sh
+   #rm debian11.sh
+
+#
+## Script edited by 'WaHaSa', Script V3-revision.
+#
