@@ -7,19 +7,33 @@
 
 ---
 • Install Apps on Android
-- [x] [Termux](https://apkcombo.com/id/termux/com.termux)
+- [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
 
 Copy and paste this command to Termux :
-> pkg update && pkg upgrade
+> pkg update &&
 
-* Install Debian
+<details></br>
+<summary><b><code>Install Debian</code></b></summary>
+
+#### Debian 13 (Pre-release)
+Rootfs : Armhf, Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/install.sh ; chmod +x install.sh ; ./install.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian13.sh ; chmod +x debian13.sh ; ./debian13.sh
 ```
 
+#### Debian 12 (Bookworm)
+Rootfs : Armhf, Arm64, Amd64
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian12.sh ; chmod +x debian12.sh ; ./debian12.sh
+```
+
+#### List Ubuntu | [Click Hare >](https://github.com/wahasa/Debian/tree/main/Install)
+</details>
+
+---
 * Start Debian
 ```
 debian
@@ -32,7 +46,7 @@ exit
 
 * Remove Debian
 ```
-rm -rf debian-fs
+rm -rf debian-fs .debian $PREFIX/bin/debian
 ```
 
 ---
@@ -47,9 +61,8 @@ Basic commands Ubuntu
 ---
 ## Desktop Environment
 
-on Debian, run this command :
-
-> apt update && apt upgrade
+In Debian, run this command :
+> apt update
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
@@ -102,7 +115,7 @@ Visit problem now in : [Issues](https://github.com/wahasa/Debian/issues)
 
 * Start VNC Server
 
-on Debian, run this command to start :
+In Debian, run this command to start :
 
 ```
 vnc-start
@@ -126,7 +139,7 @@ To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
 
-on Debian, run this command to stop :
+In Debian, run this command to stop :
 
 ```
 vnc-stop
