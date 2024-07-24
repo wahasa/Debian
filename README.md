@@ -13,10 +13,9 @@
 ## Installation
 
 Copy and paste this command to Termux :
-> pkg update &&
+> pkg update
 
-<details></br>
-<summary><b><code>Install Debian</code></b></summary>
+<details><summary><b><code>Install Debian</code></b></summary>
 
 #### Debian 13 (Pre-release)
 Rootfs : Armhf, Arm64, Amd64
