@@ -24,7 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/rootfs.tar.xz?raw=true" -O $tarball
+                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/oci/blobs/rootfs.tar.xz?raw=true" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"

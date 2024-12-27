@@ -17,16 +17,27 @@ Copy and paste this command to Termux :
 
 <details><summary><b><code>Install Debian</code></b></summary>
 
-#### Debian 13 (Pre-release)
+#### Debian 13 (Pre-release) - Main Repo
 Rootfs : Armhf, Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian13.sh ; chmod +x debian13.sh ; ./debian13.sh
 ```
 
-#### Debian 12 (Bookworm)
+#### Debian 12 (Bookworm) - Main Repo
 Rootfs : Armhf, Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Debian/main/Install/debian12.sh ; chmod +x debian12.sh ; ./debian12.sh
+```
+#### Debian 13 (Pre-release) - Fork Repo
+Rootfs : Armhf, Arm64, Amd64
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/jonoo0/Debian/main/Install/debian13.sh ; chmod +x debian13.sh ; ./debian13.sh
+```
+
+#### Debian 12 (Bookworm) - Fork Repo
+Rootfs : Armhf, Arm64, Amd64
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/jonoo0/Debian/main/Install/debian12.sh ; chmod +x debian12.sh ; ./debian12.sh
 ```
 
 #### List Ubuntu | [Click Hare >](https://github.com/wahasa/Debian/tree/main/Install)
