@@ -8,7 +8,7 @@ if [ -d "$folder" ]; then
         first=1
         echo "Skipping Downloading"
 fi
-tarball="debian-rootfs.tar.xz"
+tarball="debian-rootfs.tar.gz"
 if [ "$first" != 1 ];then
         if [ ! -f $tarball ]; then
                 echo "Download Rootfs, this may take a while base on your internet speed."
@@ -24,13 +24,13 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/rootfs.tar.xz?raw=true" -O $tarball
+                wget "https://github.com/debuerreotype/docker-debian-artifacts/blob/dist-${archurl}/${debian}/oci/blobs/rootfs.tar.gz?raw=true" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
-        proot --link2symlink tar -xf ${cur}/${tarball}||:
+        proot --link2symlink tar -zxf ${cur}/${tarball}||:
         cd "$cur"
    fi
    echo "debian" > ~/"$folder"/etc/hostname
